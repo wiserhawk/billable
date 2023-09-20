@@ -1,0 +1,63 @@
+<div class="new-org-setup">
+    <div class="breadcrumb">
+        <span>Get Started<i class="bi bi-caret-right-fill"></i>  Create New Organization</span>
+    </div>
+    <div class="form-container">
+        <div class="title-holder"><h3>Create Organization</h3></div>
+        <form name="form" (ngSubmit)="onSubmit()" #f="ngForm" >
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="orgname" placeholder="orgname" name="orgname" [(ngModel)]="model.orgname" #orgname="ngModel"/>
+                <label for="floatingInput">Organization Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="gstin" placeholder="gstin" name="gstin" [(ngModel)]="model.gstin" #gstin="ngModel"/>
+                <label for="floatingInput">GSTIN</label>
+            </div>
+            <div class="address-group">
+                <label class="group-name">Address</label>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="addressTo" placeholder="addressTo" name="addressTo" [(ngModel)]="model.addressTo" #addressTo="ngModel"/>
+                    <label for="floatingInput">Address To</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="addressLine1" placeholder="addressLine1" name="addressLine1" [(ngModel)]="model.addressLine1" #addressLine1="ngModel"/>
+                    <label for="floatingInput">Line1</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="addressLine2" placeholder="addressLine2" name="addressLine2" [(ngModel)]="model.addressLine2" #addressLine1="ngModel"/>
+                    <label for="floatingInput">Line2</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="addressCity" placeholder="addressCity" name="addressCity" [(ngModel)]="model.city" #city="ngModel"/>
+                    <label for="floatingInput">City</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="addressState" placeholder="addressState" name="addressState" [(ngModel)]="model.state" #state="ngModel"/>
+                    <label for="floatingInput">State</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="addressPincode" placeholder="addressPincode" name="addressPincode" [(ngModel)]="model.pincode" #pincode="ngModel"/>
+                    <label for="floatingInput">Pincode</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="phone" placeholder="phone" name="phone" [(ngModel)]="model.phone" #phone="ngModel"/>
+                    <label for="floatingInput">Phone</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="email" placeholder="email" name="email" [(ngModel)]="model.email" #email="ngModel"/>
+                    <label for="floatingInput">Email</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupFile02">Upload Logo</label>
+                <input type="file" class="form-control" id="uploadLogo" name="uploadLogo" [(ngModel)]="model.logoPath" #logoPath="ngModel">
+            </div>
+        <!-- <div class="error-holder" *ngIf="error"><i class="bi bi-x-circle"></i> {{errorMsg}}</div> -->
+            <div class="action-btn-holder">
+                <button class="btn btn-primary" type="submit">Button</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+

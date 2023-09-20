@@ -1,0 +1,72 @@
+.new-org-setup {
+    margin: 1em;
+    width: 100%;
+}
+
+.breadcrumb {
+    width: 100%;
+    height: auto;
+    border-bottom: .1em solid #ccc;
+    padding: .5em 0;    
+}
+
+.breadcrumb span {
+    margin: .5em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.form-container {
+	margin: 1em auto;
+    padding: 20px;
+	width: 400px;
+	height:auto;
+	background: #fff;
+    border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.title-holder {
+	width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 0 1em 0;
+}
+
+.title-holder h3 {
+	width: 100%;
+	font-size: 1.1em;
+}
+
+.title-holder span {
+    float: left;
+	width: 100%;
+}
+
+.info-holder {
+	width: 100%;
+}
+
+.error-holder {
+    padding: 0.2em 0;
+	width: 100%;
+    font-size: 0.7em;
+	font-weight: bold;
+	color: #c20c27;
+}
+
+.action-btn-holder {
+	width: 100%;	
+}
+
+.address-group {
+    margin: 1em 0;
+    padding: 0.3em .8em;
+    border: 0.1em solid #bbb;
+}
+
+.group-name {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}

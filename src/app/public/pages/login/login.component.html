@@ -1,0 +1,19 @@
+<div class="form-container">
+    <div class="title-holder"><h3>Billable Loging</h3></div>
+    <form name="form" (ngSubmit)="onSubmit()" #f="ngForm" >
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="username" name="username" [(ngModel)]="model.username" #username="ngModel"/>
+            <label for="floatingInput">Email / Username</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="password" name="password" [(ngModel)]="model.password" #password="ngModel" />
+            <label for="floatingPassword">Password</label>
+        </div>  
+    <div class="error-holder" *ngIf="error"><i class="bi bi-x-circle"></i> {{errorMsg}}</div>
+        <div class="action-btn-holder">
+            <button type="submit" class="action-btn">LOGIN</button>
+            <span class="forgot-pwd-text">Forgot password ? <label class="action-link">Reset Password</label></span>
+        </div>
+    </form>
+</div>
+  

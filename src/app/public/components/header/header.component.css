@@ -1,0 +1,53 @@
+.header{
+	background:url(../../../../assets/billable/images/border.png) repeat-x 0px 0px #FFF;
+	padding: 0.5em 0 0 0;
+	border-bottom: 1px solid rgba(214, 213, 212, 0.64);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left:0;
+	z-index: 999;
+}
+
+.nav-icon{
+	float: left;
+	padding: 0.3em 0.5em;
+	cursor: pointer;
+}
+
+.logo{
+	float:left;
+	padding: 0.1em;
+}
+.logo img{
+	display:inline-block;
+}
+
+.right-top-panel {
+	float: right;
+	margin-right: 0.5em;
+	font-weight: 400;
+	font-size: 1em;
+
+}
+
+.right-top-panel ul li {
+	list-style: none;
+	float: left;
+	padding: 0.3em;
+}
+.right-top-panel ul li:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+span{
+  position: relative;
+  top: -0.9em;
+  padding: .1em .2em;
+  border-radius: 30%;
+  font-size: 0.7em;
+  font-weight:bold;
+  background: red;
+  color: white;
+}
